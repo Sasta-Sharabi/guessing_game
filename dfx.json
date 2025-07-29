@@ -1,0 +1,27 @@
+{
+  "canisters": {
+    "guess_backend": {
+      "candid": "src/guess_backend/guess_backend.did",
+      "package": "guess_backend",
+      "type": "rust"
+    },
+    "guess_frontend": {
+      "dependencies": [
+        "guess_backend"
+      ],
+      "source": [
+        "src/guess_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "guess_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
