@@ -13,13 +13,13 @@
         "src/guess_frontend/dist"
       ],
       "type": "assets",
-      "workspace": "guess_frontend"
+      "workspace": "guess_frontend",
+      "candid": "src/guess_frontend/assetstorage.did"
     }
   },
   "defaults": {
     "build": {
-      "args": "",
-      "packtool": ""
+      "args": ""
     }
   },
   "output_env_file": ".env",

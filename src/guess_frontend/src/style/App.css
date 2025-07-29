@@ -1,0 +1,104 @@
+/* style/App.css */
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f0f4f8;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding-top: 50px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 0.3em;
+  text-align: center;
+}
+
+div {
+  font-size: 1.1rem;
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+form {
+  background: white;
+  padding: 20px 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgb(0 0 0 / 0.1);
+  max-width: 400px;
+  margin: 0 auto 2em auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+label {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+input[type="number"] {
+  width: 70px;
+  padding: 8px 10px;
+  font-size: 1rem;
+  border: 2px solid #2980b9;
+  border-radius: 5px;
+  outline-offset: 2px;
+  transition: border-color 0.3s ease;
+}
+
+input[type="number"]:focus {
+  border-color: #3498db;
+}
+
+button {
+  background-color: #2980b9;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  font-size: 1rem;
+  font-weight: 700;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #3498db;
+}
+
+button:active {
+  background-color: #1c5980;
+}
+
+div + div {
+  margin-top: 0.3em;
+  font-weight: 600;
+  color: #c0392b; /* red for losing message */
+}
+
+div + div:contains("You Guessed Right!!") {
+  color: #27ae60; /* green for winning message */
+}
+
+/* Fix for coloring win message specifically */
+.played-win {
+  color: #27ae60;
+  font-weight: 700;
+  font-size: 1.3rem;
+  margin-top: 1em;
+}
+
+.played-lose {
+  color: #c0392b;
+  font-weight: 700;
+  font-size: 1.3rem;
+  margin-top: 1em;
+}
